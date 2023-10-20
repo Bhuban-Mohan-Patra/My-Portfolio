@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Recursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --body--font: 'Poppins', sans-serif;;
+    --heading--font: 'Recursive', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /* padding: 0 13vw; */
+    /* background-color: #D8D2E6; */
+}
+
+.bg-color{
+    background-color: #D8D2E6;
+}
+
+nav{
+    padding: 0 13vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo > img{
+    height: 8vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2vw;
+}
+
+nav ul li{
+    font-family: var(--body--font);
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.626);
+    cursor: pointer;
+}
+
+nav i{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: none;
+    color: purple;
+    border: 1px solid purple;
+    padding: 10px;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+.purple{
+    color: purple;
+}
+
+.btn{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding:  12px 27px;
+    background-color: rgb(110, 41, 167);
+    /* background-color: rgba(128, 0, 128, 0.82); */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: purple;
+}
+
+.cv-btn{
+    background-color: #D8D2E6;
+    color: purple;
+    border: 2px solid purple;
+    transition: auto ease-out .5;
+}
+
+.cv-btn:hover{
+    background-color: purple;
+    color: white;
+}
+
+
+
+/*============================================================ Home ==============================================================*/
+#Home{
+    padding: 0 13vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+
+#Home > .icons{
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.icons i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+i:hover{
+    color: purple;
+}
+
+
+#Home > .left{
+    width: 55%;
+    font-size: 1.2rem;
+}
+
+.left > .intro{
+    font-size: 5rem;
+    color: rgb(10, 48, 48);
+    margin-bottom: 3vh;
+}
+
+.intro > span{
+    color : purple;
+}
+
+.left > button{
+    margin-top: 4vh;
+}
+
+
+#Home > .right{
+    width: calc(100% - 55% - 5vw);
+    display: flex;
+    justify-content: center;
+}
+
+.right > img{
+    width: 25vw;
+}
+
+/* =======================================================  About  =======================================================  */
+#About{
+    padding: 0 13vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#About h2{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 2vh;
+    color: rgb(10, 48, 48);;
+}
+
+#About h3{
+    font-size: 1.6rem;
+    text-align: left;
+    color: rgb(10, 48, 48);;
+}
+
+hr{
+    width: 8vw;
+    height: 3px;
+    background-color: purple;
+    display: inline-block;
+    margin: 3vh 0 5vh;
+}
+
+.hr-left{
+    text-align: left;
+}
+
+#About .content{
+    display: flex;
+    gap: 2%;
+    text-align: left;
+}
+
+.content .left{
+    width: 30%;
+}
+
+.content .right{
+    width: 30%;
+}
+
+.content .image{
+    width: 30%;
+}
+
+.image img{
+    width: 22vw;
+    height: 50vh;
+    border-radius: 4px;
+}
+
+.content p{
+    margin: 25px 0;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+/*========================================================= Serivice ==================================================================*/
+#Service{
+    padding: 0 13vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+    color: rgb(10, 48, 48);
+    font-weight: 100;
+    margin-bottom: 2vh;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container .card{
+    width: 28%;
+    background-color: #38383a0f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+.card > img {
+    width: 3rem;
+    padding: 3vh 0;
+
+}
+
+.card p{
+    padding: 3vh 2vw;
+    line-height: 1.5rem;
+}
+
+.card i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 1.2rem;
+}
+
+#icon-style{
+    border: 1px solid red;
+    border-radius: 60%;
+}
+
+/*==================================================================== Video ==========================================================*/
+#video-section{
+    margin: 5px 0;
+    height: 50vh;
+    background-color: powderblue;
+}
+.video{
+    text-align: center;
+}
+
+
+/*============================== Experience section ==========================*/
+#experience{
+    padding: 0 1vw;
+    margin-top: 5vh;
+    text-align: center;
+    
+}
+
+.experience-card{
+    height: 30vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.left-card{
+    background-color: gray;
+}
+
+.right-card{
+    background-color: gray;
+}
+
+#experience .card{
+    width: 32%;
+}
+
+
+/*============================================= portfolio-section ==========================================================*/
+#portfolio{
+    /* padding: 0 13vw; */
+    margin-top: 30vh ;
+    text-align: center;
+}  
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper>.container{
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container>a>img{
+    height: 350px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    cursor: pointer;
+    transition: trasform .5s;
+}
+
+.container>a>img:hover{
+    transform: scale(1.1);
+}
+
+.arrow{
+    color: purple;
+    background-color: gray;
+    font-size: 3rem;
+    padding: 0 5px;
+    border-radius: 70%;
+    cursor: pointer;
+}
+
+.left-arrow{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-arrow{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/*=============================================== Client-section ===========================================================*/
+#Client{
+    padding: 0 13vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+/*============================================== contact section ============================================================ */
+
+#contact{
+    padding: 0 13vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.form-contianer{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin: 1rem 20vw;
+    padding: 20px;
+    background-color: #D8D2E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input , textarea{
+    width: 80%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+
+/*========================================== footer =======================*/
+footer{
+    height: 30vh;
+    padding-top: 3rem;
+    color: white;
+    background-color: rgb(110, 41, 167);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.copyright{
+    margin-top: 4rem;
+    color: rgb(199, 190, 190);
+}
+
+footer a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px)
+{
+    nav ul li{
+        display: none;
+    }
+
+    nav i{
+        display: block;
+    }
+
+    nav > a>.btn ,i{
+        display: none;
+    }
+
+    .card
+     i{
+        display: inline-block;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh; 
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    #Home{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    #Home > .left{
+        height: 65vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+     .left > .intro{
+        font-size: 2.5rem;
+     }
+
+     .right{
+        width: 100%;
+     }
+     .right > img{
+        width: 90vw;
+    }
+
+    #About h3{
+        font-size: 1.2rem;
+    }
+
+    #About .content{
+        flex-direction: column;
+    }
+
+    .content .left , .content .right, .content .image{
+        width: 100%;
+    }
+    
+    .image img{
+        width: 90%;
+        height: 40vh;
+    }
+
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .card-container .card{
+        width: 100%;
+        padding: 6vw;
+    }
+
+    #experience .card {
+        width: 77%;
+    }
+
+    form{
+        margin: 0 20px;
+        padding: 4px;
+    }
+
+    footer{
+        margin-top: 20px;
+        height: auto;
+        display: block;
+    }
+
+    .container>a>img{
+        height: 250px;
+        width: 100% ;
+        object-fit: cover;
+        cursor: pointer;
+        transition: trasform .5s;
+    }
+
+    
+
+
+    
+
+    
+
+    
+
+}
+
